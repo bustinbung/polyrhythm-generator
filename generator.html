@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Polyrhythm Generator</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="generator.css">
+</head>
+<body>
+  <h1>polyrhythm generator</h1>
+  <div class='info'>
+    <p>assuming notation where a polyrhythm is written as x : y. <br> generates y rows of x beats where every yth beat is accented. <br> <span class='pulseacc'>pulses</span> in green, <span class='accent'>counterpulses</span> in orange with "x".</p>
+  </div>
+
+  <div class='form'>
+    <br>
+    <span class='uinput'>
+      <label for='pulse'>pulse:</label>
+      <input type='number' class='pulse form' min='2' maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" autofocus>
+    </span><br><br>
+    <span class='uinput'>
+      <label for='cpulse'>counterpulse:</label>
+      <input type='number' class='cpulse form' min='2' maxlength="2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"><br><br>
+    </span>
+    <button class='submit'>generate</button>
+  </div>
+  <br>
+  <div class='tableWrapper'>
+    <p class='resolve'></p>
+    <table>
+      <tbody class='table'>
+      </tbody>
+    </table>
+  </div>
+  <script type="text/javascript" src="generator.js"></script>
+</body>
+</html>
