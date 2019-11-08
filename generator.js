@@ -43,5 +43,5 @@ function generateTable() {
     document.getElementsByTagName('td')[i].setAttributeNode(acc);
   }
 
-  document.querySelector(".resolve").innerHTML = "this pattern will resolve in <b>" + math.lcm(pulse, cpulse) + "</b> beats."
+  document.querySelector(".resolve").innerHTML = "this pattern will resolve in <b>" + pulse, cpulse + "</b> beats."
 }
