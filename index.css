@@ -14,6 +14,14 @@
   font-family: 'Roboto Mono', monospace;
 }
 
+.octable, .oclines {
+  cursor: pointer;
+}
+
+.oc {
+  transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+}
+
 table {
   margin-left: auto;
   margin-right: auto;
@@ -55,13 +63,19 @@ input {
   font-size: 20px;
   padding: 5px;
   background-color: #154e50;
-  border-width: 0px;
+  border: 1px solid white;
   width: 10%;
 }
 label {
   padding: 10px;
 }
 
-h1, p, td, label, input, button {
+h1, h3, p, td, label, input, button {
   color: white;
+}
+
+canvas {
+  padding: 15px;
+  margin: auto;
+  height: 0px;
 }
