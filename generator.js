@@ -1,4 +1,16 @@
 function generateTable() {
+  if (hasRun == 0) {
+    var table = document.createElement('table');
+    var tableBody = document.createElement('tbody');
+    var tableStyle = document.createAttribute('class');
+    tableStyle.value = 'table';
+    tableBody.setAttributeNode(tableStyle);
+    table.appendChild(tableBody);
+    document.querySelector('.tableWrap').appendChild(table);
+  } else {
+    return;
+  }
+
 	//grab form data (switched for table accuracy)
   var cpulse = document.querySelector('.pulse').value;
   var pulse = document.querySelector('.cpulse').value;
