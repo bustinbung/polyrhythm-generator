@@ -1,5 +1,3 @@
-document.querySelector('.submit').onclick = function() {generateTable()}
-
 function generateTable() {
 	//grab form data (switched for table accuracy)
   var cpulse = document.querySelector('.pulse').value;
