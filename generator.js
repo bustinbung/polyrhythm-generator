@@ -1,3 +1,5 @@
+document.querySelector('.submit').onclick = function() {generateTable()}
+
 function generateTable() {
   if (hasRun == 0) {
     var table = document.createElement('table');
