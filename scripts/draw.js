@@ -16,6 +16,18 @@ function lines(x, y1, y2, width, pulse, cpulse) {
   cx.strokeStyle = '#ffaa81';
   cx.stroke();
 
+  //top label
+  cx.font = "20px 'Roboto Mono'";
+  cx.fillStyle = 'black'
+  cx.fillText('p', x-56, y1+7);
+  cx.font = "12px 'Roboto Mono'";
+  cx.fillText('(' + pulse + ')', x-41, y1-3);
+
+  //bottom label
+  cx.font = "20px 'Roboto Mono'";
+  cx.fillText('c', x-56, y2+7);
+  cx.font = "12px 'Roboto Mono'";
+  cx.fillText('(' + cpulse + ')', x-41, y2-3);
  }
 
 function circles(x, y1, y2, width, pulse, cpulse) {
