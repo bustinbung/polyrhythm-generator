@@ -1,3 +1,4 @@
-+ fix regeneration after one form submit
-+ work on transition
-+ better styling
++ [x] fix regeneration after one form submit
++ [x] better styling
++ [ ] work on transition
++ [ ] fix canvas font
