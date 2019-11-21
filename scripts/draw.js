@@ -15,7 +15,6 @@ function lines(x, y1, y2, width, pulse, cpulse) {
   cx.lineTo(c.width, y2);
   cx.strokeStyle = '#ffaa81';
   cx.stroke();
-
  }
 
 function circles(x, y1, y2, width, pulse, cpulse) {
