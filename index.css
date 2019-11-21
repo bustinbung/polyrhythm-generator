@@ -18,8 +18,9 @@
   cursor: pointer;
 }
 
-.oc {
-  transition: opacity 0.5s ease-in-out, display 0.5s ease-in-out;
+.tp, .lm {
+  display: none;
+  opacity: 0;
 }
 
 table {
