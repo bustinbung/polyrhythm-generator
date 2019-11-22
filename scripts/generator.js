@@ -1,13 +1,21 @@
-document.querySelector('.submit').onclick = function() {generateTable()}
-
 function generateTable() {
+  if (hasRun == 0) {
+    var table = document.createElement('table');
+    var tableBody = document.createElement('tbody');
+    var tableStyle = document.createAttribute('class');
+    tableStyle.value = 'table';
+    tableBody.setAttributeNode(tableStyle);
+    table.appendChild(tableBody);
+    document.querySelector('.tableWrap').appendChild(table);
+  }
+
 	//grab form data (switched for table accuracy)
   var cpulse = document.querySelector('.pulse').value;
   var pulse = document.querySelector('.cpulse').value;
 
   //reset table
 	var table = document.querySelector('.table');
-  table.innerHTML = "";
+  table.innerHTML = '';
 
   //create table
   var i;
@@ -31,17 +39,17 @@ function generateTable() {
   //accenting pulses
   for (i=0; i<document.getElementsByTagName('td').length; i+=parseFloat(cpulse)) {
     var pulseacc = document.createAttribute('class');
-    pulseacc.value = "pulseacc";
+    pulseacc.value = 'pulseacc';
     document.getElementsByTagName('td')[i].setAttributeNode(pulseacc);
   }
 
   //accenting counterpulses
   for (i=0; i<document.getElementsByTagName('td').length; i+=parseFloat(pulse)) {
     var acc = document.createAttribute('class');
-    acc.value = "accent";
-    document.getElementsByTagName('td')[i].innerHTML = "<b>X</b>";
+    acc.value = 'accent';
+    document.getElementsByTagName('td')[i].innerHTML = '<b>X</b>';
     document.getElementsByTagName('td')[i].setAttributeNode(acc);
   }
 
-  document.querySelector(".resolve").innerHTML = "this pattern will resolve in <b>" + pulse, cpulse + "</b> beats."
+  document.querySelector('.resolve').innerHTML = 'this pattern will resolve in <b>' + math.lcm(pulse, cpulse) + '</b> beats.'
 }
