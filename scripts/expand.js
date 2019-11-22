@@ -9,14 +9,7 @@ var lwrap = document.querySelector('.linesWrap');
 
 thead.onclick = function() {
   if (hasRun) {
-    if (tableOpen) {
-      twrap.style = 'display: none;';
-      tableOpen = false;
-
-      thead.children[0].style = 'display: inline; opacity: 1;';
-      thead.children[1].style = 'display: none; opacity: 0;';
-    } else {
-      twrap.style = 'display: block;';
+    if (!tableOpen) {
       tableOpen = true;
 
       thead.children[0].style = 'display: none; opacity: 0;';
@@ -27,18 +20,9 @@ thead.onclick = function() {
 
 lhead.onclick = function() {
   if (hasRun) {
-    if (linesOpen) {
-    lwrap.style = 'display: none;';
-    linesOpen = false;
+    if (!linesOpen) {
 
-    lhead.children[0].style = 'display: inline; opacity: 1;';
-    lhead.children[1].style = 'display: none; opacity: 0;';
     } else {
-    lwrap.style = 'display: block;';
-    linesOpen = true;
 
-    lhead.children[0].style = 'display: none; opacity: 0;';
-    lhead.children[1].style = 'display: inline; opacity: 1;';
-  }
   }
 }
