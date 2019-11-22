@@ -15,13 +15,6 @@ function globalCall() {
   draw(60, 25, 75, c.width, pulse, cpulse);
   generateTable();
 
-  if (!hasRun) {
-    document.querySelector('.tableWrap').style = 'display: none;';
-    document.querySelector('.linesWrap').style = 'display: none;';
-  } else {
-    return;
-  }
-
   hasRun = true;
 }
 
