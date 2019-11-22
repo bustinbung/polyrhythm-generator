@@ -22,8 +22,6 @@ thead.onclick = function() {
       thead.children[0].style = 'display: none; opacity: 0;';
       thead.children[1].style = 'display: inline; opacity: 1;';
     }
-  } else {
-    return;
   }
 }
 
@@ -42,7 +40,5 @@ lhead.onclick = function() {
     lhead.children[0].style = 'display: none; opacity: 0;';
     lhead.children[1].style = 'display: inline; opacity: 1;';
   }
-  } else {
-  return;
   }
 }
