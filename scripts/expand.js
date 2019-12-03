@@ -32,7 +32,7 @@ lhead.onclick = function() {
       linesOpen = true;
 
       lhead.children[0].style = 'display: none; opacity: 0;';
-      lhead.children[1].style = 'display: inline; opacity: 1;';    
+      lhead.children[1].style = 'display: inline; opacity: 1;';
     } else {
       lwrap.classList.remove('open');
       linesOpen = false;
