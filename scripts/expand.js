@@ -34,7 +34,7 @@ lhead.onclick = function() {
       lhead.children[0].style = 'display: none; opacity: 0;';
       lhead.children[1].style = 'display: inline; opacity: 1;';    
     } else {
-      lwrap.classList.remve('open');
+      lwrap.classList.remove('open');
       linesOpen = false;
 
       lhead.children[0].style = 'display: inline; opacity: 1;';
