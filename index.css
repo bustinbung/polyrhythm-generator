@@ -23,6 +23,14 @@
   opacity: 0;
 }
 
+.tableWrap, .linesWrap {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
 table {
   margin-left: auto;
   margin-right: auto;
