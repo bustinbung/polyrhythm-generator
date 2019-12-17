@@ -10,6 +10,7 @@
 </head>
 <body>
   <h1>polyrhythm generator</h1>
+  <content>
     <form>
       <br>
       <uinput type='pulse'>
@@ -23,6 +24,7 @@
     </form>
 
     <br>
+    <h3 class='octable'>table</h3>
     <results type='table'>
       <h3 class='octable'>table <span class='tm oc'>+</span><span class='tp oc'>-</span></h3>
       <tableWrap>
@@ -30,16 +32,17 @@
       </tableWrap>
     </results>
 
+    <h3 class='oclines'>line diagram</h3>
     <results type='lines'>
       <h3 class='oclines'>line diagram <span class='lp oc'>+</span><span class='lm oc'>-</span></h3>
       <linesWrap>
         <canvas class='lines' width=500px></canvas>
       </linesWrap>
     </results>
+  </content>
 
   <script type='text/javascript' src='scripts/main.js'></script>
   <script type='text/javascript' src='scripts/generator.js'></script>
   <script type='text/javascript' src='scripts/draw.js'></script>
-  <script type='text/javascript' src='scripts/expand.js'></script>
 </body>
 </html>
