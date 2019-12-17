@@ -19,4 +19,5 @@ function globalCall() {
 }
 
 //check for change in input
-document.querySelector('.submit').onclick = function() {globalCall()}
+document.querySelector('.pulse').oninput = function() {globalCall()}
+document.querySelector('.cpulse').oninput = function() {globalCall()}

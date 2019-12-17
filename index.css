@@ -54,19 +54,6 @@ body {
   text-align: center;
 }
 
-button {
-  font-family: inherit;
-  font-size: 20px;
-  padding: 5px;
-  background-color: #154e50;
-  border-width: 0px;
-  transition: color, 0.075s;
-}
-
-button:hover {
-  background-color: #0e3638;
-}
-
 input {
   font-family: inherit;
   font-size: 20px;
@@ -79,7 +66,7 @@ label {
   padding: 10px;
 }
 
-h1, h3, p, td, label, input, button {
+h1, h3, p, td, label, input {
   color: white;
 }
 

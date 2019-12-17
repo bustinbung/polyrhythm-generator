@@ -10,33 +10,32 @@
 </head>
 <body>
   <h1>polyrhythm generator</h1>
-  <div class='content'>
-    <div class='form'>
+    <form>
       <br>
-      <span class='uinput'>
+      <uinput type='pulse'>
         <label for='pulse'>pulse:</label>
-        <input type='number' class='pulse form' min='2' maxlength='2' oninput='javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);'>
-      </span><br><br>
-      <span class='uinput'>
+        <input type='number' class='pulse' min='2' maxlength='2' oninput='javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);'>
+      </uinput><br><br>
+      <uinput type='cpulse'>
         <label for='cpulse'>counterpulse:</label>
-        <input type='number' class='cpulse form' min='2' maxlength='2' oninput='javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);'><br><br>
-      </span>
-    </div>
+        <input type='number' class='cpulse' min='2' maxlength='2' oninput='javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);'><br><br>
+      </uinput>
+    </form>
 
     <br>
-    <div class='results'>
-
+    <results type='table'>
       <h3 class='octable'>table <span class='tm oc'>+</span><span class='tp oc'>-</span></h3>
-      <div class='tableWrap'>
+      <tableWrap>
         <p class='resolve'></p>
-      </div>
+      </tableWrap>
+    </results>
 
+    <results type='lines'>
       <h3 class='oclines'>line diagram <span class='lp oc'>+</span><span class='lm oc'>-</span></h3>
-      <div class='linesWrap'>
+      <linesWrap>
         <canvas class='lines' width=500px></canvas>
-      </div>
-    </div>
-  </div>
+      </linesWrap>
+    </results>
 
   <script type='text/javascript' src='scripts/main.js'></script>
   <script type='text/javascript' src='scripts/generator.js'></script>
