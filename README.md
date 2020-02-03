@@ -8,6 +8,5 @@ Webpage that generates tables for counting polyrhythms. Written in HTML, CSS, an
 + Divided line segments (for [polyrhythmic juggling, baby](https://www.youtube.com/watch?v=wEPu8rEYQJY))
 
 ## Planned Features:
-+ [ ] Horizontal styling
 + [ ] Quick counting for faster polyrhythms (like 1 2 3 41 for 7:11)
 + [ ] Known counting phrases ("pass the godd*** butter" for 4:3 or "nice cup of tea" for 3:2)
