@@ -6,7 +6,7 @@ function generateTable() {
     tableStyle.value = 'table';
     tableBody.setAttributeNode(tableStyle);
     table.appendChild(tableBody);
-    document.querySelector('.tableWrap').appendChild(table);
+    document.querySelector('tableWrap').appendChild(table);
   }
 
 	//grab form data (switched for table accuracy)

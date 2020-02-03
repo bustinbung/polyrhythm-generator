@@ -18,7 +18,7 @@ function lines(x, y1, y2, width, pulse, cpulse) {
 
   //top label
   cx.font = "20px 'Roboto Mono'";
-  cx.fillStyle = 'black'
+  cx.fillStyle = 'white'
   cx.fillText('p', x-56, y1+7);
   cx.font = "12px 'Roboto Mono'";
   cx.fillText('(' + pulse + ')', x-41, y1-3);
