@@ -1,5 +1,5 @@
 # polyrhythm-generator
-Webpage that generates tables for counting polyrhythms. Written in HTML, CSS, and JS. Hosted [here](https://bustinbung.github.io/polyrhythm-generator)
+Webpage that generates tables for counting polyrhythms. Written in HTML, CSS, and JS. Hosted [here](https://bustinbung.github.io/polyrhythm-generator).
 
 ## Current features:
 + Pulse/Counterpulse input
