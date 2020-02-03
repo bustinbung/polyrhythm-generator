@@ -41,7 +41,8 @@ form {
 
 content {
   display: grid;
-  grid-template-rows: 5vw 85vw;
+  justify-content: center;
+  grid-template-rows: 5vw auto;
   grid-template-columns: 20vw 35vw 35vw;
   margin: auto;
 }
@@ -75,7 +76,8 @@ input {
   padding: 5px;
   background-color: #154e50;
   border: 1px solid white;
-  width: 10%;
+  width: 15%;
+  text-align: center;
 }
 label {
   padding: 10px;
